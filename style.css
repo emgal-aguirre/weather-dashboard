@@ -1,0 +1,24 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    color: black;
+  }
+
+.result{
+    background-color: #faf9f9;
+}
+
+/* .center-text {
+    text-align: center;
+} */
+
+.five-day {
+    background-color: #384AD3;
+    opacity: 83%;
+    border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px 15px #dee2e6;
+  color: white;
+  font-weight: lighter;
+}

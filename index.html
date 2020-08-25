@@ -9,22 +9,21 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
     <title>Weather Dashboard</title>
 </head>
 
 <body>
     <!-- Nav bar with title  -->
-    <nav class="navbar navbar-light bg-light">
+    <!-- <nav class="navbar navbar-light bg-light">
         <div class="form-inline">
             <h2>Weater Dashboard</h2>
         </div>
-    </nav>
-
-    <!-- Container 1-->
+    </nav> -->
 
     <!-- search input -->
     <div class="container mt-5 p-5">
-
         <div class="row p-3 mx-auto">
             <div class="col-12">
                 <div class="input-group mb-3 p-1">
@@ -37,28 +36,28 @@
                 </div>
             </div>
         </div>
-
-
     </div>
+
+
     <!-- city results -->
-    <div class="card body m-4 p-5">
+    <div class="card body m-4 p-5 result">
         <div class="col-12">
-            <h1 class="city-name">Austin, Texas</h1>
-            <h4 class="todays-date">Thursday, August 28, 2020</h3>
+            <h1 class="city-name center-text">Austin, Texas</h1>
+            <h4 class="todays-date center-text">Thursday, August 28, 2020</h3>
 
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-sm p-4">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item temperature">Temperature: </li>
-                        <li class="list-group-item humity">Humity: </li>
+                        <li class="list-group-item temperature result">Temperature: </li>
+                        <li class="list-group-item humity result">Humity: </li>
                     </ul>
                 </div>
                 <div class="col-sm p-4">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item wind-speed">Wind Speed: </li>
-                        <li class="list-group-item uv-index">UV Index: </li>
+                        <li class="list-group-item wind-speed result">Wind Speed: </li>
+                        <li class="list-group-item uv-index result">UV Index: </li>
                     </ul>
                 </div>
             </div>
@@ -69,7 +68,7 @@
     <div class="card-deck m-4">
         <div class="card mt-5">
 
-            <div class="card-body">
+            <div class="card-body five-day">
                 <h5 class="card-title">Card title</h5>
                 <img class="card-img-top" src="Assets/cloud.png" Card image cap>
                 <!-- <p> proably need to update p tags to recieve data -->
@@ -81,7 +80,7 @@
         </div>
         <div class="card mt-5">
 
-            <div class="card-body">
+            <div class="card-body five-day">
                 <h5 class="card-title">Card title</h5>
                 <img class="card-img-top" src="Assets/cloud.png" Card image cap>
                 <p>
@@ -92,7 +91,7 @@
         </div>
         <div class="card mt-5">
 
-            <div class="card-body">
+            <div class="card-body five-day">
                 <h5 class="card-title">Card title</h5>
                 <img class="card-img-top" src="Assets/cloud.png" Card image cap>
                 <p>
@@ -103,7 +102,7 @@
         </div>
         <div class="card mt-5">
 
-            <div class="card-body">
+            <div class="card-body five-day">
                 <h5 class="card-title">Card title</h5>
                 <img class="card-img-top" src="Assets/cloud.png" Card image cap>
                 <p>
@@ -114,7 +113,7 @@
         </div>
         <div class="card mt-5">
 
-            <div class="card-body">
+            <div class="card-body five-day">
                 <h5 class="card-title">Card title</h5>
                 <img class="card-img-top" src="Assets/cloud.png" Card image cap">
                 <p>
