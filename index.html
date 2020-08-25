@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <!-- Nav bar with title  -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="form-inline">
+            <h2>Weater Dashboard</h2>
+        </div>
+    </nav>
+
+    <!-- Container 1-->
+
+    <!-- search input -->
+    <div class="container mt-5 p-5">
+        <div class="card body">
+            <div class="row p-3 mx-auto">
+                <div class="col-12">
+                    <div class="input-group mb-3 p-1">
+                        <h3>Search a City: </h3>
+                        <input type="text" class="form-control" placeholder="City, State"
+                            aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- city results -->
+        <div class="card body mt-5 p-5">
+            <div class="col-12">
+                <h1 class="city-name">Austin, Texas</h1>
+                <h4 class="todays-date">Thursday, August 28, 2020</h3>
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm p-4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item temperature">Temperature: </li>
+                            <li class="list-group-item humity">Humity: </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm p-4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item wind-speed">Wind Speed: </li>
+                            <li class="list-group-item uv-index">UV Index: </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card body mt-5 p-5">
+                <div class="card-deck">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
