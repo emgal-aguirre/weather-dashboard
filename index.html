@@ -23,41 +23,43 @@
     </nav> -->
 
     <!-- search input -->
-    <div class="container mt-5 p-5">
-        <div class="row p-3 mx-auto">
-            <div class="col-12">
-                <div class="input-group mb-3 p-1">
-                    <h3 class="search m-1">Search a City: </h3>
-                    <input type="text" class="form-control m-1" placeholder="City, State"
-                        aria-describedby="button-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-dark btn-sm" type="button" id="button-addon2">Search</button>
+    <section class="top-banner">
+        <div class="container mt-5 p-5">
+            <div class="row p-3 mx-auto">
+                <div class="col-12">
+                    <div class="input-group mb-3 p-1">
+                        <h3 class="search m-1">Search a City: </h3>
+                        <input type="text" class="form-control m-1" placeholder="City, State" autofocus
+                            aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-dark btn-sm" type="button" id="button-addon2">Search</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
     <!-- city results -->
     <div class="card body m-4 p-5 result">
         <div class="col-12">
             <h1 class="city-name center-text">Austin, Texas</h1>
-            <h4 class="todays-date center-text">Thursday, August 28, 2020</h3>
+            <p id="currentDay" class="lead"></p>
 
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-sm p-4">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item temperature result">Temperature: </li>
-                        <li class="list-group-item humity result">Humity: </li>
+                        <li class="list-group-item temperature result"></li>
+                        <li class="list-group-item humity result"></li>
                     </ul>
                 </div>
                 <div class="col-sm p-4">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item wind-speed result">Wind Speed: </li>
-                        <li class="list-group-item uv-index result">UV Index: </li>
+                        <li class="list-group-item wind result"></li>
+                        <li class="list-group-item uv-index result"></li>
                     </ul>
                 </div>
             </div>
@@ -130,6 +132,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="api.openweathermap.org"></script>
     <script src="script.js"></script>
 </body>
 
