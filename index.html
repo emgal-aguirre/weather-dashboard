@@ -29,10 +29,11 @@
                 <div class="col-12">
                     <div class="input-group mb-3 p-1">
                         <h3 class="search m-1">Search a City: </h3>
-                        <input type="text" class="form-control m-1" placeholder="City, State" autofocus
+                        <input type="text" class="form-control m-1 city-input" placeholder="City, State" autofocus
                             aria-describedby="button-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-dark btn-sm" type="button" id="button-addon2">Search</button>
+                            <button class="btn btn-outline-dark btn-sm search-btn" type="button"
+                                id="button-addon2">Search</button>
                         </div>
                     </div>
                 </div>
@@ -48,12 +49,13 @@
             <p id="currentDay" class="lead"></p>
 
         </div>
+
         <div class="container">
             <div class="row">
                 <div class="col-sm p-4">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item temperature result"></li>
-                        <li class="list-group-item humity result"></li>
+                        <li class="list-group-item humidity result"></li>
                     </ul>
                 </div>
                 <div class="col-sm p-4">

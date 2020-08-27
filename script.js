@@ -12,39 +12,46 @@ function displayDate() {
 } setInterval(displayDate, 1000);
 displayDate();
 
+// //city search on click 
 
+// //weather key 
+// function getWeather() {
+//     
+//     var ApiKey = "b3a715295a3981335545db2b6dede970";
+//     var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + weatherApiKey
 
-
-//weather key 
-function getWeather() {
-    var city = $("#searchInput").val();
-    var weatherApiKey = "b3a715295a3981335545db2b6dede970";
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + weatherApiKey
-
-    $.ajax({
-        url: queryURL,
-        method: "GET"
-    }).then(function (response) {
-        console.log(QueryURL);
-        console.log(response);
-
-        // Convert the temp to fahrenheit
-        var tempF = (response.main.temp - 273.15) * 1.80 + 32;
-
-        $(".city").html("<h1>" + response.name + "</h1>");
-        $(".tempF").text("Temperature: " + response.main.temp);
-        $(".humity").text("Humidity: " + response.main.humidity);
-        $(".wind").text("Wind Speed: " + response.main.wind);
-
-        //console.log
-        console.log("Temperature: " + response.main.temp);
-        console.log("Humidity: " + response.main.humidity);
-        console.log("Wind Speed: " + response.main.wind);
-    });
-}
 
 // store all data retrieved inside object "response"
 
 
-//transfer content to HTML 
+// This is our API key
+var APIKey = "166a433c57516f51dfab1f7edaed8413";
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
+    "q=Bujumbura,Burundi&appid=" + APIKey;
 
+// AJAX call to the OpenWeatherMap API
+$.ajax({
+    url: queryURL,
+    method: "GET"
+})
+    // We store all of the retrieved data inside of an object called "response"
+    .then(function (response) {
+        console.log(queryURL);
+        console.log(response);
+
+        // Transfer content to HTML
+        $(".city-name").html("<h1>" + response.name + " Weather Details</h1>");
+        $(".wind").text("Wind Speed: " + response.wind.speed);
+        $(".humidity").text("Humidity: " + response.main.humidity);
+
+        // Convert the temp to fahrenheit
+        var tempF = (response.main.temp - 273.15) * 1.80 + 32;
+
+        // add temp content to html
+        $(".temperature").text("Temperature (F): " + tempF.toFixed(2));
+
+        // Log the data in the console as well
+        console.log("Wind Speed: " + response.wind.speed);
+        console.log("Humidity: " + response.main.humidity);
+        console.log("Temperature (F): " + tempF);
+    });
